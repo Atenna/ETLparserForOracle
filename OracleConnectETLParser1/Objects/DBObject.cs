@@ -7,7 +7,7 @@ namespace OracleConnectETLParser1.Objects
 {
     public class DbObject
     {
-        public string Name { get; private set; }  
+        public string Name { get; private set; }
         public List<string> ReferencedNames { get; set; }  
         public List<DbObject> ReferencedObjects { get; set; } 
         public List<Column> Columns { get; protected set; }     
@@ -22,7 +22,6 @@ namespace OracleConnectETLParser1.Objects
             Owner = owner;
             ReferencedNames = new List<string>();
             ReferencedObjects = new List<DbObject>();
-            Columns = new List<Column>();
             AddReferenceObjects();
             AddBaseLevel();
         }

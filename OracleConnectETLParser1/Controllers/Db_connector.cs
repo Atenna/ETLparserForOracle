@@ -6,8 +6,9 @@ namespace OracleConnectETLParser1.Controllers
 {
     public class DbConnector
     {
-        public OracleConnection OraConnection = new OracleConnection(@"Data Source=localhost:1521/xe; User ID=ivka; Password=11591951");
-        public string DbOwner = "IVKA";
+
+        public OracleConnection OraConnection = new OracleConnection(@"Data Source=localhost:1521/xe; User ID=liesko; Password=trileptal");
+        public string DbOwner = "LIESKO";
 
         public void Open()
         {
